@@ -5,11 +5,6 @@ import (
 	"sort"
 )
 
-func main()  {
-	if IsStraight([]int{14, 3, 2, 6, 4 ,5}) {
-		fmt.Println("IsStraight")
-	}
-}
 
 func IsStraight(cards []int) bool {
 	if len(cards) < 4 {
@@ -79,4 +74,14 @@ func validateStraight(currentCard int, nextCard int) bool{
 	}
 
 	return true
+}
+
+
+func main()  {
+	if IsStraight([]int{14, 3, 2, 6, 4 ,5}) {
+		fmt.Println("IsStraight")
+		return
+	}
+
+	fmt.Println("Not IsStraight")
 }
